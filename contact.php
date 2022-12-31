@@ -47,7 +47,39 @@ if (isset($_POST['email'])) {
 
     if (strlen($error_message) > 0) {
         problem($error_message);
-    }
+    } else {
+       $mail = new PHPMailer();
+
+
+       // specify SMTP credentials
+
+
+       $mail->isSMTP();
+       $mail->Host = 'smtp.gmail.com';
+       $mail->SMTPAuth = true;
+       $mail->Username = 'no.reply.msrtech@gmail.com';
+       $mail->Password = 'kwarpwlfsmqgtxlo';
+       $mail->SMTPSecure = 'tls';
+       $mail->Port = 587;
+       $mail->setFrom($email, 'TechSolutionsWeb');
+       $mail->addAddress('no.reply.msrtech@gmail.com', 'Me');
+       $mail->Subject = 'New message from your website';
+
+       // Enable HTML if needed
+       $mail->isHTML(true);
+       $bodyParagraphs = ["Name: {$name}", "Email: {$email}", "Message:", nl2br($message)];
+       $body = join('<br />', $bodyParagraphs);
+       $mail->Body = $body;
+       echo $body;
+
+       if($mail->send()){
+           header('Location: thank-you.html'); // Redirect to 'thank you' page. Make sure you have it
+       } else {
+
+           $errorMessage = 'Oops, something went wrong. Mailer Error: ' . $mail->ErrorInfo;
+       }
+
+   }
 
     $email_message = "Form details below.\n\n";
 
