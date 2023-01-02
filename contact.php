@@ -24,18 +24,11 @@
         $mail->Password = 'kwarpwlfsmqgtxlo'; //enter you email password
         $mail->Port = 587;
         $mail->SMTPSecure = "tls";
-        $mail->SMTPOptions = array(
-            'ssl' => array(
-                'verify_peer' => false,
-                'verify_peer_name' => false,
-                'allow_self_signed' => true
-            )
-        );
 
         //Email Settings
         $mail->isHTML(true);
         $mail->setFrom($email, $name);
-        $mail->addAddress("msreed3@outlook.com"); //enter you email address
+        $mail->addAddress("no.reply.msrtech@gmail.com"); //enter you email address
         $mail->Subject = ("$email ($subject)");
         $mail->Body = $body;
 
