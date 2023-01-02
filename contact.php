@@ -21,7 +21,7 @@
         $mail->Host = "smtp.gmail.com";
         $mail->SMTPAuth = true;
         $mail->Username = "no.reply.msrtech@gmail.com"; //enter you email address
-        $mail->Password = 'mtdtxohelulakihq'; //enter you email password
+        $mail->Password = 'xxxxxxxChangethis to actual password if needing to pull to web server'; //enter you email password
         $mail->Port = 587;
         $mail->SMTPSecure = "tls";
 
