@@ -24,6 +24,7 @@
         $mail->Password = 'kwarpwlfsmqgtxlo'; //enter you email password
         $mail->Port = 587;
         $mail->SMTPSecure = "tls";
+        $mail->SMTPDebug = 2;
 
         //Email Settings
         $mail->isHTML(true);
