@@ -28,7 +28,7 @@
         //Email Settings
         $mail->isHTML(true);
         $mail->setFrom($email, $name);
-        $mail->addAddress("no.reply.msrtech@gmail.com"); //enter you email address
+        $mail->addAddress("msreed3@outlook.com"); //enter you email address
         $mail->Subject = ("$email ($subject)");
         $mail->Body = $body;
 
