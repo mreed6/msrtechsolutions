@@ -21,7 +21,7 @@
         $mail->Host = "smtp.gmail.com";
         $mail->SMTPAuth = true;
         $mail->Username = "no.reply.msrtech@gmail.com"; //enter you email address
-        $mail->Password = 'xxxxxxxChangethis to actual password if needing to pull to web server'; //enter you email password
+        $mail->Password = 'mtdtxohelulakihq'; //enter you email password
         $mail->Port = 587;
         $mail->SMTPSecure = "tls";
 
@@ -39,6 +39,10 @@
             $status = "failed";
             $response = "Something is wrong: <br><br>" . $mail->ErrorInfo;
         }
+
+        setTimeout(function () {
+            window.location.href= 'https://techsolutions-msr.com'; // the redirect goes here
+        },5000); // 5 seconds
 
         exit(json_encode(array("status" => $status, "response" => $response)));
     }
