@@ -18,7 +18,7 @@
 
         //SMTP Settings
         $mail->isSMTP();
-        $mail->Host = "142.251.163.27";
+        $mail->Host = "smtp.gmail.com";
         $mail->SMTPAuth = true;
         $mail->Username = "no.reply.msrtech@gmail.com"; //enter you email address
         $mail->Password = 'kwarpwlfsmqgtxlo'; //enter you email password
