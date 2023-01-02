@@ -1,4 +1,5 @@
 <?php
+    header( "refresh:5;url=techsolutions.com" );
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;
     use PHPMailer\PHPMailer\SMTP;
@@ -42,6 +43,5 @@
 
         exit(json_encode(array("status" => $status, "response" => $response)));
     }
-    <meta http-equiv="refresh" content="5;url=techsolutions-msr.com">
 ?>
 
