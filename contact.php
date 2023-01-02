@@ -35,7 +35,6 @@
         if ($mail->send()) {
             $status = "success";
             $response = "Email is sent!";
-            <meta http-equiv="refresh" content="5;url=techsolutions-msr.com">
         } else {
             $status = "failed";
             $response = "Something is wrong: <br><br>" . $mail->ErrorInfo;
