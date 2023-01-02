@@ -20,7 +20,7 @@ if(isset($_POST['name']) && isset($_POST['email'])){
     $mail->Username = "no.reply.msrtech@gmail.com";
     $mail->Password = 'kwarpwlfsmqgtxlo';
     $mail->Port = 587;
-    $mail->SMTPSecure = "ssl";
+    $mail->SMTPSecure = "tls";
 
     //email settings
     $mail->isHTML(true);

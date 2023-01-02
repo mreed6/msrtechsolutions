@@ -20,7 +20,7 @@
         $mail->Username = "no.reply.msrtech@gmail.com"; //enter you email address
         $mail->Password = 'kwarpwlfsmqgtxlo'; //enter you email password
         $mail->Port = 587;
-        $mail->SMTPSecure = "ssl";
+        $mail->SMTPSecure = "tls";
 
         //Email Settings
         $mail->isHTML(true);
