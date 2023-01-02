@@ -1,5 +1,7 @@
 <?php
     use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\Exception;
+    use PHPMailer\PHPMailer\SMTP;
 
     if (isset($_POST['name']) && isset($_POST['email'])) {
         $name = $_POST['name'];
@@ -7,9 +9,10 @@
         $subject = $_POST['subject'];
         $body = $_POST['message'];
 
-        require_once "PHPMailer/PHPMailer.php";
-        require_once "PHPMailer/SMTP.php";
-        require_once "PHPMailer/Exception.php";
+
+        require "PHPMailer/PHPMailer.php";
+        require "PHPMailer/SMTP.php";
+        require "PHPMailer/Exception.php";
 
         $mail = new PHPMailer();
 
