@@ -21,6 +21,13 @@
         $mail->Password = 'kwarpwlfsmqgtxlo'; //enter you email password
         $mail->Port = 587;
         $mail->SMTPSecure = "tls";
+        $mail->SMTPOptions = array(
+            'ssl' => array(
+                'verify_peer' => false,
+                'verify_peer_name' => false,
+                'allow_self_signed' => true
+            )
+        );
 
         //Email Settings
         $mail->isHTML(true);
