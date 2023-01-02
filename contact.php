@@ -40,9 +40,7 @@
             $response = "Something is wrong: <br><br>" . $mail->ErrorInfo;
         }
 
-        setTimeout(function () {
-            window.location.href= 'https://techsolutions-msr.com'; // the redirect goes here
-        },5000); // 5 seconds
+        <meta http-equiv="refresh" content="5;url=techsolutions-msr.com">
 
         exit(json_encode(array("status" => $status, "response" => $response)));
     }
