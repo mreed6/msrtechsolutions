@@ -1,5 +1,5 @@
 <?php
-    header( "refresh:5;url=index.html" );
+    header( "refresh:3;url=index.html" );
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;
     use PHPMailer\PHPMailer\SMTP;
