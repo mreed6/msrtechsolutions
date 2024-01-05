@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "xpertblue.com",
+  "Id": "7a404a6d-61bd-4ead-b9ca-92db50a353ad"
+}
